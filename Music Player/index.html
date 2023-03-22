@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2c9666c10.js" crossorigin="anonymous"></script>
+</head>
+<body class="blue1">
+
+   
+
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark position-fixed z-1 w-100">
+            <a class="navbar-brand ms-3" href="#">
+                <img class="img-fluid logo" src="https://cdn3.vectorstock.com/i/1000x1000/29/27/note-music-colorful-rainbow-logo-icon-illus-vector-28932927.jpg">
+            </a>
+            <span class="text-light">
+                <div class="fw-light">Ninjas</div>
+                <div class="fw-bolder">Studio</div>
+            </span>
+
+            <div class="container w-50 ">
+                <div class="text-white bg-dark mt-2 ms-4">
+                    <h6 class="fw-light">Favourites</h6>
+                </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-icons">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="nav-icons">
+
+                <div class="container short">
+                    <div class=" bg-white rounded-4 light-blue">
+    
+                        <form class="d-flex" role="search">
+                            <button class="bg-transparent no-border ms-2"><i class="fa-solid fa-magnifying-glass m-0"></i></button>
+                            <input class="form-control no-border light-blue text-light" type="search" placeholder="Search" aria-label="Search">
+                            <button class="bg-transparent no-border me-3"><i class="fa-solid fa-microphone m-0"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-light ms-auto me-4 fs-3"><i class="fa-solid fa-bell"></i></div>
+               <div class="me-4 ms-3">
+                   <img class="img-fluid logo" src="https://cdna.artstation.com/p/assets/images/images/053/054/138/large/avetetsuya-studios-alien.jpg?1661309922">
+               </div> 
+
+            </div>
+      </nav>
+
+      <section class="music-section scroll-bar-hide p-2 me-2">
+        <!-- Album Cover -->
+        <div class="container p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card"><img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB_UclIZteRtA1e0ZQa1Ky0HPMZuGbMolWg&usqp=CAU" alt=""></div>
+                </div>
+                <div class="col">
+                    <div class="card"><img class="card-img" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/music-album-cover-template-design-8c1c49849522f3e17e0776f15dd6e47e_screen.jpg?ts=1617448722" alt=""></div>
+                </div>
+                <div class="col">
+                    <div class="card"><img class="card-img" src="https://marketplace.canva.com/EAE7cNDaBVQ/1/0/1600w/canva-black-modern-minimalist-ripped-paper-aesthetic-album-cover-pSy824v_QFw.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- Recent Release -->
+        <div class="container mt-3 h-50 text-white">
+            <h5 class="m-3">Latest Release</h5>
+            <div class="row m-3 align-content-start low-height">
+                <!-- 1 -->
+                <div class="col-md-6 p-2">
+                    <div class="container-fluid d-flex align-items-center">
+                        <div><img class="img-fluid recent-release-img rounded-1" src="https://i.pinimg.com/550x/44/50/49/445049f468ad8167c0a113bbf7122608.jpg" alt="error"></div>
+                        
+                        <h6 class="m-3">EndLess<br>
+                            <p class="mt-2 grey-text date">23 June,2022</p>
+                        </h6>
+
+                        <div class="ms-5">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary transparent-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis fs-5"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                </div>
+                            <p>03:44</p>
+                        </div>  
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-6 p-2">
+                    <div class="container-fluid d-flex align-items-center">
+                        <div><img class="img-fluid recent-release-img rounded-1" src="https://img.freepik.com/free-psd/music-print-template-with-photo_23-2148986046.jpg" alt="error"></div>
+                        
+                        <h6 class="m-3">Next Ray<br>
+                            <p class="mt-2 grey-text date">01 June,2022</p>
+                        </h6>
+
+                        <div class="ms-5">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary transparent-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis fs-5"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                </div>
+                            <p>04:04</p>
+                        </div>  
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-md-6 p-2">
+                    <div class="container-fluid d-flex align-items-center">
+                        <div><img class="img-fluid recent-release-img rounded-1" src="https://static.displate.com/280x392/displate/2021-02-25/9745f5c7cbf49553798efe79953dbc2d_dd89db9aeb56c2a57be19160a1645804.jpg" alt="error"></div>
+                        
+                        <h6 class="m-3">Being Beaten<br>
+                            <p class="mt-2 grey-text date">21 May,2022</p>
+                        </h6>
+
+                        <div class="ms-5">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary transparent-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis fs-5"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                </div>
+                            <p>03:24</p>
+                        </div>  
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-md-6 p-2">
+                    <div class="container-fluid d-flex align-items-center">
+                        <div><img class="img-fluid recent-release-img rounded-1" src="https://render.fineartamerica.com/images/rendered/search/poster/7.5/8/break/images/artworkimages/medium/3/apache-207-rap-dena-yuninda.jpg" alt="error"></div>
+                        
+                        <h6 class="m-3">Legacies<br>
+                            <p class="mt-2 grey-text date">27 May,2022</p>
+                        </h6>
+
+                        <div class="ms-5">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary transparent-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis fs-5"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                                </div>
+                            <p>04:35</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Artists -->
+        <div class="container mt-3 mb-3 text-white popular-artist">
+            <h5>Popular Artists</h5>
+            <div class="row mt-3 d-flex flex-column">
+                <div class="col d-flex justify-content-around">
+                    <a href="#" class="p-2 no-style-link"><img class="img-fluid popular-artist-img" src="https://media.gq-magazine.co.uk/photos/5e7ccfc0525b920008162b30/master/w_1920,h_1280,c_limit/20200326-New-music-update-03.jpg">
+                    <div class="text-center p-2 fw-bold text-offwhite">Ed Sharen</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link"><img class="img-fluid popular-artist-img" src="https://businesstalkmagazine.com/wp-content/uploads/2021/11/Jubin.jpg">
+                        <div class="text-center p-2 fw-bold text-offwhite">John Lennon</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link"><img class="img-fluid popular-artist-img" src="https://i.pinimg.com/736x/32/45/35/3245354db0e7ebc7b642e2d0a79f7ccd.jpg">
+                        <div class="text-center p-2 fw-bold text-offwhite">Raghuwanshi</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link"><img class="img-fluid popular-artist-img" src="https://www.bollywoodhungama.com/wp-content/uploads/2022/09/DIVINE-unleashes-a-Hit-Boy-collaboration-with-explosive-banger-%E2%80%98Gunehgar%E2%80%99-watch-video.jpg">
+                        <div class="p-2 text-center fw-bold text-offwhite">Divine</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link"><img class="img-fluid popular-artist-img" src="https://www.socialketchup.in/wp-content/uploads/2022/07/1.png">
+                        <div class="text-center p-2 fw-bold text-offwhite">Dino James</div>
+                    </a>    
+                </div>
+                <div class="col stations d-flex justify-content-around">
+                    <!--station logo -->
+                    <a href="#" class="p-2 no-style-link"><img class="img-fluid station-logo p-2" src="https://as1.ftcdn.net/v2/jpg/02/62/53/08/1000_F_262530809_BqVJtKHOm7kNvoQc2pIqLu1oGSzJa6xc.jpg"></a>
+
+                    <!-- Moods -->
+                    <a href="#" class="p-2 no-style-link position-relative">
+                        <img src="https://cdns-images.dzcdn.net/images/cover/ac318c9e4b06ee96adff300194618f5e/500x500.jpg" class="m-2 station-img">
+                        <div class="overlay-workout"></div>
+                        <div class="station-workout">Workout</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link position-relative">
+                        <img src="https://live.staticflickr.com/8104/8497729052_273e23f2a4_b.jpg" class="m-2 station-img">
+                        <div class="station-retro">Retro</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link position-relative">
+                        <img src="https://img.freepik.com/free-photo/lovely-fake-flower_23-2147811203.jpg" class="m-2 station-img">
+                        <div class="station-love">Love</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link position-relative">
+                        <img src="https://i1.sndcdn.com/artworks-QEjoNOsDKm26XcF4-WhyD4A-t500x500.jpg" class="m-2 station-img">
+                        <div class="station-chill">Chill</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link position-relative">
+                        <img src="https://p1.pxfuel.com/preview/280/509/163/dark-electric-guitar-musical-royalty-free-thumbnail.jpg" class="m-2 station-img">
+                        <div class="station-rock">Rock</div>
+                    </a>
+                    <a href="#" class="p-2 no-style-link position-relative">
+                        <img src="https://cdn.wallpapersafari.com/96/93/6udL8E.jpg" class="m-2 station-img">
+                        <div class="station-pop">Pop</div>
+                    </a>
+                </div>
+                <div class="col justify-content-between d-flex ">
+                    <a href="#" class="m-2 no-style-link position-relative">
+                        <img class="event m-2" src="https://thumbs.dreamstime.com/b/silhouettes-young-people-dancing-club-disco-party-concept-95443055.jpg">
+                        <div class="overlay-party m-2"></div>
+                        <div class="event-party">Party</div>
+                    </a>
+                    <a href="#" class="m-2 no-style-link position-relative">
+                        <img class="m-2 event" src="https://img.freepik.com/free-photo/colorful-image-professional-dj-mixer-isolated-gradient-red-yellow-background-neon_155003-45892.jpg">
+                        <div class="overlay-electronics m-2"></div>
+                        <div class="event-party">Electronic</div>
+                    </a>
+                    <a href="#" class="m-2 no-style-link position-relative">
+                        <img class="m-2 event" src="https://img.freepik.com/free-vector/road-trip-by-car-summer-vacation-travel-trip_107791-9489.jpg">
+                        <div class="overlay-roardtrip m-2"></div>
+                        <div class="event-party">Road Trip</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest English -->
+        <div class="container mt-3 mb-3 text-light">
+            <h5 class="mb-3">Latest English</h5>
+            <div class="row mt-4">
+                <div class="col d-flex justify-content-around">
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://w0.peakpx.com/wallpaper/728/208/HD-wallpaper-dark-flower-background-flower-beautiful-dark-love-mody-background-beauty-thumbnail.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://cdn2.vectorstock.com/i/1000x1000/79/21/music-festival-poster-design-template-modern-vector-32767921.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://cdn.w600.comps.canstockphoto.com/piano-concert-poster-vector-clipart_csp36873509.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://media.istockphoto.com/id/165931564/vector/abstract-saxophone.jpg?s=612x612&w=0&k=20&c=HYjhZSECg7T5pF0CZBVBd87l1dSRy3-y_eIYcPORxKI=">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXWeGCXXPqj6IQjIKoNr7lHNMloS2WebjtQ&usqp=CAU">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://i.pinimg.com/736x/12/c1/cd/12c1cddd2ab5b0f743b2766dd49a6f5b.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>   
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Hindi -->
+        <div class="container mt-4 mb-3 text-light">
+            <h5 class="mb-3">Latest Hindi</h5>
+            <div class="row mt-4">
+                <div class="col d-flex justify-content-around">
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://w0.peakpx.com/wallpaper/728/208/HD-wallpaper-dark-flower-background-flower-beautiful-dark-love-mody-background-beauty-thumbnail.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://cdn2.vectorstock.com/i/1000x1000/79/21/music-festival-poster-design-template-modern-vector-32767921.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://cdn.w600.comps.canstockphoto.com/piano-concert-poster-vector-clipart_csp36873509.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://media.istockphoto.com/id/165931564/vector/abstract-saxophone.jpg?s=612x612&w=0&k=20&c=HYjhZSECg7T5pF0CZBVBd87l1dSRy3-y_eIYcPORxKI=">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXWeGCXXPqj6IQjIKoNr7lHNMloS2WebjtQ&usqp=CAU">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>
+                    <a href="#" class="no-style-link">
+                        <img class="LE-img" src="https://i.pinimg.com/736x/12/c1/cd/12c1cddd2ab5b0f743b2766dd49a6f5b.jpg">
+                        <div class="ms-2">
+                            <div class="LE-text mt-1">Ominsm</div>
+                            <div class="LE-date grey-text">26 march,2022</div>
+                        </div>   
+                    </a>   
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom Space -->
+        <div class="bottom"></div>
+      </section>
+
+      <section class="aside-section p-2 ms-2 text-white" >
+        <h5>Queue</h5>
+        <button class="btn btn-secondary dropdown-toggle transparent-btn aqua top-right" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Queue
+        </button>
+        <div class="dropdown top-right" id="queue-top"> 
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Playlists</a></li>
+              <li><a class="dropdown-item" href="#">Favourite Songs</a></li>
+            </ul>
+        </div>
+        <!-- Song List -->
+        <div class="  scroll-bar-hide songs-section" id="song-list">
+            <ul class="no-border p-1">
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">1.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/615/Welcome-To-My-Life-English-2017-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Fusion <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>     
+                        </div>
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">2.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/997/Hindi-Hip-Hop-Hindi-2023-20230108053137-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Mainstream <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                        </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">3.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/829/DESI-HIP-HOP-Punjabi-2022-20220107105638-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Roll Out <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">4.</h6>
+                        <img class="aside-logo rounded-1" src="https://pagalnew.com/coverimages/Desi-Hip-Hop-I-Am-ICON-500-500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">The Next One <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">1.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/615/Welcome-To-My-Life-English-2017-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Fusion <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>     
+                        </div>
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">2.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/997/Hindi-Hip-Hop-Hindi-2023-20230108053137-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Mainstream <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                        </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">3.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/829/DESI-HIP-HOP-Punjabi-2022-20220107105638-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Roll Out <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">4.</h6>
+                        <img class="aside-logo rounded-1" src="https://pagalnew.com/coverimages/Desi-Hip-Hop-I-Am-ICON-500-500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">The Next One <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">1.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/615/Welcome-To-My-Life-English-2017-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Fusion <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>     
+                        </div>
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">2.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/997/Hindi-Hip-Hop-Hindi-2023-20230108053137-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Mainstream <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                        </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">3.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/829/DESI-HIP-HOP-Punjabi-2022-20220107105638-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Roll Out <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">4.</h6>
+                        <img class="aside-logo rounded-1" src="https://pagalnew.com/coverimages/Desi-Hip-Hop-I-Am-ICON-500-500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">The Next One <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">1.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/615/Welcome-To-My-Life-English-2017-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Fusion <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>     
+                        </div>
+                    </div>
+                </li>
+
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">2.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/997/Hindi-Hip-Hop-Hindi-2023-20230108053137-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Mainstream <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                        </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">3.</h6>
+                        <img class="aside-logo rounded-1" src="https://c.saavncdn.com/829/DESI-HIP-HOP-Punjabi-2022-20220107105638-500x500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">Roll Out <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+                <li class="no-style-list mb-1">   
+                    <div class="d-flex align-items-center position-relative">
+                        <h6 class="me-3 mt-2 light-purple">4.</h6>
+                        <img class="aside-logo rounded-1" src="https://pagalnew.com/coverimages/Desi-Hip-Hop-I-Am-ICON-500-500.jpg">
+                        <div class="container d-flex aside-text">
+                            <div class="fw-bold">The Next One <br>
+                            <div class="fw-bold song-artist">Flumes</div>
+                            </div>
+                            <button class="ms-auto transparent-btn text-white fs-5"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>         
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+
+      </section>
+
+      <div class="bg-dark text-white " id="playBar">
+        <div class="playbar-container d-flex p-1 mt-2">
+            <img class="img-fluid playbar-img" src="https://i.pinimg.com/736x/63/a0/08/63a008f631ae7492a75a001bd0791e8f.jpg">
+            <div class="m-1 ms-2">
+                <h6 class="">Onism <br>
+                    <p class="artist-name mt-1">John Lennon</p>
+                </h6>
+            </div>
+            <a href="#" class="short-icon btn ms-2"><i class="fa-regular fa-heart"></i></a>
+            <a href="#" class="short-icon btn ms-2"><i class="fa-solid fa-ban"></i></a>
+            <div class="start-time">0:00</div>
+            <div class="progress-bar d-flex flex-row">
+                <span class="ms-5 short-icon"><i class="fa-solid fa-shuffle"></i></span>
+                <span class="ms-5 medium-icon"><i class="fa-solid fa-backward"></i></span>
+                <span class="ms-5 medium-icon"><i class="fa-regular fa-circle-play"></i></span>
+                <span class="ms-5 medium-icon"><i class="fa-solid fa-forward"></i></span>
+                <span class="ms-5 me-5 short-icon"><i class="fa-solid fa-repeat"></i></span>
+            </div>
+            <div class="end-time">3:33</div>
+            <div class="progress-display "id="pointer">
+                <input type="range" value="0" min="0" max="100">
+                <div class="bar-pointer" ></div>
+            </div>
+            <div class="ms-auto" id="playbar-end">
+                <a href="#" class="m-2"><i class="fa-solid fa-list"></i></a>
+                <a href="#" class="m-2"><i class="fa-solid fa-computer"></i></a>
+                <a href="#" class="m-2 vol-icon">
+                    <i class="fa-solid fa-volume-low fs-6 vol-icon"></i>
+                    <input type="range" value="0" min="0" max="100" id="vol-bar" class="pointer">
+                </a>
+                <a href="#" class="m-2"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></a>
+                <div id="vol-bar-2"></div>
+            </div>
+            
+        </div>
+        
+        </div>
+      </div>
+
+
+      <!-- <h1 class="text-light border-white">Working</h1> -->
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
